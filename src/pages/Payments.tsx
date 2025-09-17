@@ -135,7 +135,6 @@ export default function Payments() {
   const totalArrears = arrears.reduce((sum, arr) => sum + arr.amountDue, 0);
 
   return (
-    <AdminLayout>
       <div className="space-y-6">
         <div className="flex justify-between items-center">
           <div>
@@ -454,6 +453,5 @@ export default function Payments() {
           </TabsContent>
         </Tabs>
       </div>
-    </AdminLayout>
   );
 }

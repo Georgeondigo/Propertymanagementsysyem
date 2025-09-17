@@ -26,7 +26,7 @@ import {
 
 const Settings = () => {
   return (
-    <AdminLayout>
+    
       <div className="space-y-6">
         {/* Header */}
         <div>
@@ -450,7 +450,6 @@ const Settings = () => {
           </TabsContent>
         </Tabs>
       </div>
-    </AdminLayout>
   );
 };
 

@@ -205,7 +205,6 @@ export default function Maintenance() {
   const avgResolutionTime = 2.3; // days
 
   return (
-    <AdminLayout>
       <div className="space-y-6">
         <div className="flex justify-between items-center">
           <div>
@@ -510,6 +509,5 @@ export default function Maintenance() {
           </DialogContent>
         </Dialog>
       </div>
-    </AdminLayout>
   );
 }

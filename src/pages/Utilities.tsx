@@ -156,7 +156,7 @@ export default function Utilities() {
   const totalGasCost = readings.reduce((sum, reading) => sum + reading.gasCost, 0);
 
   return (
-    <AdminLayout>
+    
       <div className="space-y-6">
         <div className="flex justify-between items-center">
           <div>
@@ -420,6 +420,6 @@ export default function Utilities() {
           </TabsContent>
         </Tabs>
       </div>
-    </AdminLayout>
+    
   );
 }

@@ -133,7 +133,7 @@ export default function Messages() {
   };
 
   return (
-    <AdminLayout>
+    
       <div className="space-y-6">
         <div className="flex justify-between items-center">
           <div>
@@ -466,6 +466,5 @@ export default function Messages() {
           </TabsContent>
         </Tabs>
       </div>
-    </AdminLayout>
   );
 }
