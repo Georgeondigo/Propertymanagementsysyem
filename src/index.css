@@ -1,7 +1,12 @@
+/* 1. Import Google Fonts at the very top */
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Geist+Mono:wght@100..900&display=swap');
+
+/* 2. Tailwind base layers */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* 3. CSS Variables */
 @layer base {
   :root {
     /* Grey-Blue-White Theme */
@@ -11,26 +16,26 @@
     --card-foreground: 215 25% 27%;
     --popover: 0 0% 100%;
     --popover-foreground: 215 25% 27%;
-    
+
     /* Primary: Professional Blue */
     --primary: 215 84% 52%;
     --primary-foreground: 0 0% 100%;
-    
+
     /* Secondary: Light Grey-Blue */
     --secondary: 214 32% 91%;
     --secondary-foreground: 215 25% 27%;
-    
+
     /* Muted: Subtle Grey */
     --muted: 210 40% 96%;
     --muted-foreground: 215 16% 47%;
-    
+
     /* Accent: Vibrant Blue */
     --accent: 208 100% 47%;
     --accent-foreground: 0 0% 100%;
-    
+
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
-    
+
     --border: 214 32% 91%;
     --input: 214 32% 91%;
     --ring: 215 84% 52%;
@@ -43,18 +48,18 @@
     --warning-foreground: 0 0% 100%;
     --info: 208 100% 47%;
     --info-foreground: 0 0% 100%;
-    
+
     /* Status colors for units */
     --status-occupied: 142 71% 45%;
     --status-vacant: 38 92% 50%;
     --status-maintenance: 0 84% 60%;
-    
+
     /* Admin sidebar theme */
     --sidebar-bg: 215 28% 17%;
     --sidebar-foreground: 210 20% 90%;
     --sidebar-accent: 208 100% 47%;
     --sidebar-hover: 215 25% 25%;
-    
+
     /* Tenant portal theme */
     --tenant-bg: 210 20% 98%;
     --tenant-sidebar: 0 0% 100%;
@@ -80,22 +85,22 @@
     --card-foreground: 210 20% 90%;
     --popover: 215 25% 22%;
     --popover-foreground: 210 20% 90%;
-    
+
     --primary: 208 100% 47%;
     --primary-foreground: 0 0% 100%;
-    
+
     --secondary: 215 25% 25%;
     --secondary-foreground: 210 20% 90%;
-    
+
     --muted: 215 25% 25%;
     --muted-foreground: 215 16% 65%;
-    
+
     --accent: 215 84% 52%;
     --accent-foreground: 0 0% 100%;
-    
+
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
-    
+
     --border: 215 25% 25%;
     --input: 215 25% 25%;
     --ring: 208 100% 47%;
@@ -107,18 +112,18 @@
     --warning-foreground: 0 0% 100%;
     --info: 208 100% 47%;
     --info-foreground: 0 0% 100%;
-    
+
     /* Status colors */
     --status-occupied: 142 71% 45%;
     --status-vacant: 38 92% 50%;
     --status-maintenance: 0 84% 60%;
-    
+
     /* Admin sidebar theme */
     --sidebar-bg: 215 28% 14%;
     --sidebar-foreground: 210 20% 90%;
     --sidebar-accent: 208 100% 47%;
     --sidebar-hover: 215 25% 20%;
-    
+
     /* Tenant portal theme */
     --tenant-bg: 215 28% 17%;
     --tenant-sidebar: 215 25% 22%;
@@ -128,11 +133,18 @@
   }
 }
 
+/* 4. Apply font globally */
 @layer base {
   * {
     @apply border-border;
   }
+
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans;
+    font-family: 'Geist', ui-sans-serif, system-ui, sans-serif;
+  }
+
+  code, pre {
+    font-family: 'Geist Mono', ui-monospace, SFMono-Regular, monospace;
   }
 }

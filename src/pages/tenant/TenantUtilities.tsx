@@ -13,9 +13,9 @@ export default function TenantUtilities() {
   const [selectedPeriod, setSelectedPeriod] = useState("6months");
 
   const currentMonthUsage = [
-    { type: "Electricity", usage: 425, unit: "kWh", cost: 85.50, rate: 0.201, status: "normal", icon: Zap, color: "hsl(var(--warning))" },
-    { type: "Water", usage: 12.5, unit: "m³", cost: 48.75, rate: 3.90, status: "high", icon: Droplets, color: "hsl(var(--info))" },
-    { type: "Gas", usage: 15.2, unit: "m³", cost: 32.20, rate: 2.12, status: "normal", icon: Flame, color: "hsl(var(--success))" },
+    { type: "Electricity", usage: 25, unit: "kWh", cost: 35.50, rate: 35, status: "normal", icon: Zap, color: "hsl(var(--warning))" },
+    { type: "Water", usage: 25, unit: "m³", cost: 48.75, rate: 3.90, status: "high", icon: Droplets, color: "hsl(var(--info))" },
+   /* { type: "Gas", usage: 15.2, unit: "m³", cost: 32.20, rate: 2.12, status: "normal", icon: Flame, color: "hsl(var(--success))" }, */
   ];
 
   const historicalUsage = [
